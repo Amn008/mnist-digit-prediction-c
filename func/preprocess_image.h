@@ -157,6 +157,6 @@ void convert_to_MNIST_Image(Network* nn,char* path){
                 cvPutText(src,&c[0], cvPoint(rects[i].x,rects[i].y-4 /*adjustments*/), &font,cvScalar(0,0,0,0));
                 i++;
         }
-        cvShowImage("Tutorial", src);
+        cvShowImage("Predicted Values", src);
         cvWaitKey(0);
 }
